@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply px-4 py-2 bg-white text-[#E31E52] font-semibold rounded-lg hover:bg-gray-50;
+    }
+
+    .btn-secondary {
+        @apply px-4 py-2 border border-white text-white font-semibold rounded-lg;
+    }
+
+    .product-card {
+        @apply bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-200;
+    }
+
+    .product-card:hover {
+        @apply transform -translate-y-1 shadow-lg;
+    }
+
+    .nav-header {
+        @apply bg-[#E31E52];
+    }
+
+    .search-input {
+        @apply w-full px-4 py-2 rounded-lg border-gray-200;
+    }
+
+    .discount-badge {
+        @apply absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-sm font-medium;
+    }
+
+    .price-original {
+        @apply ml-2 text-gray-400 line-through text-sm;
+    }
+
+    .price-current {
+        @apply text-red-500 font-bold text-xl;
+    }
+
+    .rating-container {
+        @apply flex items-center text-sm text-gray-600;
+    }
+
+    .star-rating {
+        @apply text-yellow-400;
+    }
+}
